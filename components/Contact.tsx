@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Clock, Send } from "lucide-react";
 
@@ -10,7 +10,7 @@ const [phone, setPhone] = useState("");
 const [studentClass, setStudentClass] = useState("");
 const [message, setMessage] = useState("");
 
-const handleWhatsAppSubmit = (e) => {
+const handleWhatsAppSubmit = (e: FormEvent<HTMLFormElement>) => {
 e.preventDefault();
 
 
